@@ -1,0 +1,15 @@
+@font-face {
+    font-family: UniThin;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/UniThin/UniThin.eot);
+    src: url(../fonts/UniThin/UniThin.eot?#iefix) format("embedded-opentype"), url(../fonts/UniThin/UniThin.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: UniHeavy;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/UniHeavy/UniHeavy.eot);
+    src: url(../fonts/UniHeavy/UniHeavy.eot?#iefix) format("embedded-opentype"), url(../fonts/UniHeavy/UniHeavy.ttf) format("truetype")
+}

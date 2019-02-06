@@ -18,6 +18,9 @@ Encore
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
+    .addEntry('fullpage.min', './assets/js/jquery.fullpage.min.js')
+    .addEntry('main', './assets/css/app.css')
+    .addEntry('fullpage', './assets/css/fullpage.css')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
 
