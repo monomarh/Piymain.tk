@@ -16,98 +16,102 @@
             {% endblock %}
         </title>
 
-        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
-
         {% block stylesheets %}
-
+            <link rel="stylesheet" href="{{ asset('build/app.css') }}">
         {% endblock %}
 
     </head>
     <body>
         {% block body %}
 
-        {% endblock %}
+            <div class="navbar">
+                <div class="elements">
+                    <div><a href="#">Меню</a></div>
+                    <div><a href="#">Блог</a></div>
+                </div>
+            </div>
 
-        <div class="row navbar">
-            <div class="col-6"><a href="#">Меню</a></div>
-            <div class="col-6"><a href="blog.php">Блог</a></div>
-        </div>
+            <div id="fullpage">
 
-        <div id="fullpage">
-
-            <div class="section first container">
-                <div class="row">
-                    <div class="col-12">
+                <div class="section first">
+                    <div>
                         <p class="big">Здравствуй</p>
                         <p>это мой сайт</p>
                         <p>и блог</p>
                         <p class="rectangle"></p>
                     </div>
                 </div>
-            </div>
 
-            <div class="section second container">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="big">Я<br>i</p>
-                        <p>начинающий<br>разработчик<br><p class="rectangle"></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section third container">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="big">Блог<br>i</p>
-                        <p>для изучения<br>английского<br><p class="rectangle"><a href="blog.php">блог</a></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section fourth container">
-                <div class="row">
-
-                    <div class="col-12">
-                        <p class="big">Обо мне<br>i</p>
-                        <p>для просмотра<br>портфолио<br><p class="rectangle"><a href="" class="modal">Посмотреть</a></p>
-
-                        <div class="portfolio">
-                            <div class="bg">
-                                <h2>Кто я?</h2>
-                                <span>Студент факультета РФиКТ в бгу<br>начинающий разработчик<br>и активный парень</span>
-                                <h2>Мои навыки</h2>
-                                <span>HTML, CSS, JS, Photoshop, Gulp, C++</span>
-                                <p class="rectangle"><a href="" class="close-modal">Закрыть</a></p>
-                            </div>
+                <div class="section second">
+                    <div>
+                        <div>
+                            <p class="big">Я<br>i</p>
+                            <p>начинающий<br>разработчик<br>
+                            <p class="rectangle"></p>
                         </div>
-
                     </div>
                 </div>
-            </div>
 
-            <div class="section fifth container">
-                <div class="row">
-                    <div class="col-12">
+                <div class="section third">
+                    <div>
+                        <div>
+                            <p class="big">Блог<br>i</p>
+                            <p>для изучения<br>английского<br>
+                            <p class="rectangle">
+                                <a href="blog.php">блог</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section fourth">
+                    <div>
+
+                        <div class="col-12">
+                            <p class="big">Обо мне<br>i</p>
+                            <p>для просмотра<br>портфолио<br><p class="rectangle">
+                                <a href="" class="modal">Посмотреть</a>
+                            </p>
+
+                            <div class="portfolio">
+                                <div class="bg">
+                                    <h2>Кто я?</h2>
+                                    <span>Студент факультета РФиКТ в бгу<br>начинающий разработчик<br>и активный парень</span>
+                                    <h2>Мои навыки</h2>
+                                    <span>HTML, CSS, JS, Photoshop, Gulp, C++</span>
+                                    <p class="rectangle">
+                                        <a href="" class="close-modal">Закрыть</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section fifth">
+                    <div>
                         <p class="big">
-                            Лайк<br><span id="like"><i class="fas fa-heart fa-2x"></i></span>
-                        <p class="rectangle counter">0</p>
-                        </p>
+                            Лайк<br>
+                            <span id="like">
+                                <i class="fas fa-heart fa-2x"></i>
+                            </span>
+                            <p class="rectangle counter">0</p>
                     </div>
-                </div>
-                <div class="row soc">
-                    <div class="col-6"><a href="https://vk.com/id146400367">Vk</a></div>
-                    <div class="col-6"><a href="https://github.com/Monomarh">Github</a></div>
-                </div>
-                <div class="powered">
-                    <p class="rectangle">powered by ruslan</p>
+                    <div class="soc">
+                        <a href="https://vk.com/id146400367">Vk</a>
+                        <a href="https://github.com/Monomarh">Github</a>
+                    </div>
+                    <div class="powered">
+                        <p class="rectangle">powered by ruslan</p>
+                    </div>
                 </div>
             </div>
 
-        </div>
-
-        <script src="{{ asset('build/app.js') }}"></script>
-        <script src="{{ asset('build/runtime.js') }}"></script>
-        {% block javascripts %}
+            {% block javascripts %}
+                <script src="{{ asset('build/app.js') }}"></script>
+                <script src="{{ asset('build/runtime.js') }}"></script>
+            {% endblock %}
 
         {% endblock %}
     </body>

@@ -1,16 +1,17 @@
 import '../css/app.css';
 import '../fonts/index.css';
-import fullpage from 'fullpage.js';
+import '@fortawesome/fontawesome-free/css/all.css';
+// import fullpage from 'fullpage.js';
 
 const $ = require('jquery');
 
 (() => {
 
-    new fullpage('#fullpage', {
-        // anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage', 'fifthPage'],
-        // navigation: true,
-        // navigationPosition: 'right'
-    });
+    // new fullpage('#fullpage', {
+    //     // anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage', 'fifthPage'],
+    //     // navigation: true,
+    //     // navigationPosition: 'right'
+    // });
 
     $('.fa-heart').on("click", function () {
         var count = 1;
