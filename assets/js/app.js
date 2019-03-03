@@ -7,9 +7,9 @@ const $ = require('jquery');
 (() => {
 
     new fullpage('#fullpage', {
-        anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage', 'fifthPage'],
-        navigation: true,
-        navigationPosition: 'right'
+        // anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage', 'fifthPage'],
+        // navigation: true,
+        // navigationPosition: 'right'
     });
 
     $('.fa-heart').on("click", function () {
