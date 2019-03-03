@@ -1,11 +1,12 @@
-// any CSS you require will output into a single css file (app.css in this case)
+import '../css/app.css';
 import '../fonts/index.css';
+import fullpage from 'fullpage.js';
 
 const $ = require('jquery');
 
-$(function() {
+(() => {
 
-    $('#fullpage').fullpage({
+    new fullpage('#fullpage', {
         anchors: ['firstPage', 'secondPage', '3rdPage', 'fourthPage', 'fifthPage'],
         navigation: true,
         navigationPosition: 'right'
@@ -69,4 +70,4 @@ $(function() {
     $(".fourth a").click(function(e){
         e.preventDefault();
     });
-});
+})();
